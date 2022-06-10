@@ -1,0 +1,34 @@
+
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_Omilian27()
+{
+window.close()
+}
+</script>
+<script type="text/javascript">
+var dom_wyswitel_omilian = {
+wielkosc: '100m2',
+cena: '500000zł',
+rodzaj: 'Szeregowiec',
+pokaz: function ()
+{
+document.write(this.wielkosc + ' ' + this.cena + ' ' + this.rodzaj  )
+}
+}
+dom_wyswitel_omilian.pokaz();
+
+
+dom_wyswitel_omilian.stan=' surowy ';
+dom_wyswitel_omilian.wypisz=function() {alert('stan: ' + this.stan  )}
+dom_wyswitel_omilian.wypisz();
+
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Omilian27()"/>
+</body>
+</html>

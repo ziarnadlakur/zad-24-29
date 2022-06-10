@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_Omilian26()
+{
+window.close()
+}
+</script>
+<script type="text/javascript">
+var dom_wyswitel_omilian = {
+wielkosc: '100m2',
+cena: '500000zł',
+rodzaj: 'Szeregowiec',
+pokaz: function ()
+{
+document.write(this.wielkosc + ' ' + this.cena + ' ' + this.rodzaj  )
+}
+}
+dom_wyswitel_omilian.pokaz();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Omilian26()"/>
+</body>
+</html>

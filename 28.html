@@ -1,0 +1,39 @@
+
+<html>
+<head>
+	<script type="text/javascript">
+		function okno_zamknij_Omilian28()
+		{
+			window.close()
+		}
+	</script>
+<script type="text/javascript">
+function dom(wielkosc_Omil,rodzaj_Omil,cena_Omil)
+{
+this.wielkosc=wielkosc_Omil;
+this.rodzaj=rodzaj_Omil;
+this.cena=cena_Omil;
+}
+dom.prototype.wypisz = function ()
+{
+alert(this.wielkosc+ ' ' + this.rodzaj+ ' ' + this.cena);
+};
+var dom1 = new dom("100m2", "szeregowiec", "500k zl"); 
+var dom2 = new dom('200m2', 'jedno rodzinny', '1mln zl');
+
+dom1.wypisz();
+dom2.wypisz();
+
+document.write("dostęp do właściwości"+"<br>");
+
+document.write("dom pierwszy"+" "+dom1.wielkosc+" "+dom1.rodzaj+" "+dom1.cena+"<br>"); 
+document.write("dom drugi"+" "+dom2.wielkosc+" "+dom2.rodzaj+" "+dom1.cena);
+</script>
+	
+</head>
+<body>
+<br>
+programowanie obiektowe<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Omilian28()"/>
+</body>
+</html>
